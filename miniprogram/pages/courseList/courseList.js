@@ -25,20 +25,6 @@ Page({
   },
 
   /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
    * 生命周期函数--监听页面显示
    */
   onShow: async function () {
@@ -77,13 +63,6 @@ Page({
   onReachBottom: function () {
     var waterfallComponent = this.selectComponent('#waterfallView')
     waterfallComponent.onLoadData()
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
   },
 
   onClickButton: function (e) {
@@ -150,66 +129,6 @@ Page({
       message: '程序员小哥正在加紧开发中~~~',
       duration: 1500
     });
-/*     if (this.data.addStudentID.length === 0 || this.data.addStudentName.length === 0 || this.data.addStudentSex.length === 0 || this.data.addStudentUrl === "/images/add.png") {
-      Toast.fail({
-        message: '照片、姓名、学号、性别都是必填信息',
-        duration: 1500
-      });
-    } else if (this.data.addStudentSex !== "男" && this.data.addStudentSex !== "女") {
-      Toast.fail({
-        message: '性别只能输入男或女',
-        duration: 1500
-      });
-    } else {
-      wx.showLoading({
-        title: '加载中'
-      });
-      db.collection('allStudents').where({
-        stuID: this.data.addStudentID
-      }).get().then(
-        res => {
-          if (res.data.length === 0) {
-            this.uploadFile(this.data.addStudentUrl).then(
-              res => {
-                db.collection("allStudents").add({
-                  data: {
-                    stuID: this.data.addStudentID,
-                    stuName: this.data.addStudentName,
-                    stuSex: this.data.addStudentSex,
-                    stuPhotoUrl: res.fileID,
-                  },
-                  success: (res) => {
-                    wx.hideLoading();
-                    this.setData({
-                      showAddStudentPop: false,
-                      addStudentName: "",
-                      addStudentID: "",
-                      addStudentSex: "",
-                      addStudentUrl: "/images/add.png"
-                    });
-                    Toast.fail({
-                      message: '目前不支持学生信息上传人脸识别人员库，因此无法对您上传的学生进行签到，请使用我们的测试库',
-                      duration: 1500
-                    });
-                  },
-                  fail: (res) => {
-                    wx.hideLoading();
-                    this.setData({
-                      showAddStudentPop: false
-                    });
-                  }
-                })
-              }
-            )
-          } else {
-            wx.hideLoading();
-            Toast.fail({
-              message: '学生学号重复',
-              duration: 1500
-            });
-          }
-        });
-    } */
   },
 
   closeSexStudentPop: function () {

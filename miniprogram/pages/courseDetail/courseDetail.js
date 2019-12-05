@@ -25,7 +25,7 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onLoad: function(options) {
     this.onPageInit(options.id)
     this.setData({
       _id: options.id
@@ -33,55 +33,14 @@ Page({
   },
 
   /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function () {
+  onUnload: function() {
     this.refreshData()
   },
 
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
 
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  },
-
-  refreshData: function () {
+  refreshData: function() {
     wx.cloud.callFunction({
       name: 'uploadStatu',
       data: {
@@ -100,20 +59,20 @@ Page({
     })
   },
 
-  refreshCount: function () {
+  refreshCount: function() {
     let stuArray = this.data.theCourseData['stuID'];
     let length = stuArray.length;
     let cnt = 0;
-    for(let i = 0;i < length;i++) {
+    for (let i = 0; i < length; i++) {
       let nowStu = this.data.theCourseData['stuStatus'][stuArray[i]];
-      if(nowStu['hasSigned'] == true) cnt++;
+      if (nowStu['hasSigned'] == true) cnt++;
     }
     this.setData({
       hasSignCount: cnt
     })
   },
 
-  onPageInit: async function (courseID) {
+  onPageInit: async function(courseID) {
     let courseData = await db.collection('stuSignSysCourseMsg')
       .where({
         _id: courseID
@@ -136,7 +95,7 @@ Page({
     this.switchLoading();
   },
 
-  onClickStopButton: function (e) {
+  onClickStopButton: function(e) {
     // 按下停止签到按钮触发的函数
     var that = this;
     wx.cloud.callFunction({
@@ -159,7 +118,7 @@ Page({
     })
   },
 
-  onClickSignButton: function (e) {
+  onClickSignButton: function(e) {
     wx.chooseImage({
       count: 1,
       sizeType: 'compressed',
@@ -173,7 +132,7 @@ Page({
         let base64Code = wx.getFileSystemManager().readFileSync(tempFilePaths, 'base64');
         var boolVal = false;
         wx.request({
-          url: '',//根据个人服务器添加
+          url: '', //根据个人服务器添加，提供图片剪裁服务
           method: 'POST',
           data: {
             base64code: base64Code
@@ -218,8 +177,7 @@ Page({
                       Toast.fail({
                         message: "图片识别错误"
                       })
-                    }
-                    else {
+                    } else {
                       wx.hideLoading();
                       wx.showToast({
                         title: '识别结束',
@@ -246,7 +204,7 @@ Page({
     })
   },
 
-  onDeleteCourse: function () {
+  onDeleteCourse: function() {
     wx.showModal({
       title: '对话框',
       content: '确认删除该课程？',
@@ -258,8 +216,8 @@ Page({
                 wx.showToast({
                   title: '删除课程成功',
                   icon: 'success',
-                  success: function () {
-                    setTimeout(function () {
+                  success: function() {
+                    setTimeout(function() {
                       wx.switchTab({
                         url: '/pages/courseList/courseList',
                       })

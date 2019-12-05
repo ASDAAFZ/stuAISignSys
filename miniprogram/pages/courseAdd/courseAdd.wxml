@@ -137,9 +137,6 @@
               </block>
             </view>
           </block>
-          <!-- <view class="scroll-view-item" bindtap="addStudent">
-            <image src="add.png" mode="widthFix" style="width:100rpx;"></image>
-          </view> -->
         </scroll-view>
       </view>
     </view>
@@ -151,67 +148,6 @@
       </van-col>
     </van-row>
   </van-transition>
-  <!--   <van-transition show="{{ pageShow[3] }}" name="fade" duration="{{600}}">
-    <view class="createYourCourse">
-      <van-row>
-        <view class="textTitleCss">
-          Create
-        </view>
-      </van-row>
-      <van-row>
-        <view class="textTitleCss">
-          Your Course
-        </view>
-      </van-row>
-    </view>
-    <view class="userInputCourseMsg">
-      <van-row>
-        <view>
-          <input placeholder="CourseName" class="inputArea" value="{{courseName}}"></input>
-        </view>
-      </van-row>
-      <van-row>
-        <view>
-          <input placeholder="CourseTime" class="inputArea" value="{{courseTime}}"></input>
-        </view>
-      </van-row>
-      <van-row>
-        <view>
-          <input placeholder="CourseRoom" class="inputArea" value="{{courseRoom}}"></input>
-        </view>
-      </van-row>
-      <van-row>
-        <view class="textAreaContainer" style="margin-top:8%;">
-          <textarea placeholder-style="color:black;" placeholder="Please enter the introduction of the course" style="height:100px;" value="{{courseIntroduction}}"></textarea>
-        </view>
-      </van-row>
-      <van-row>
-        <view class="srollContainer">
-          <scroll-view scroll-y="true" class="page-section-spacing">
-            <view class="scroll-view-item" bindtap="addStudentPage">
-              <image src="add.png" mode="widthFix" style="width:100rpx;"></image>
-            </view>
-          </scroll-view>
-        </view>
-      </van-row>
-      <van-row>
-        <view class="crateMsgContainer">
-          <van-col span="12" offset="2">
-            <text>
-              Please click next after confirming the information
-            </text>
-          </van-col>
-        </view>
-      </van-row>
-    </view>
-    <van-row>
-      <van-col offset="16" span="6">
-        <view class="imageSize" bindtap="submitData">
-          <image src="rightArrow.png" mode="widthFix" style="width:80%;"></image>
-        </view>
-      </van-col>
-    </van-row>
-  </van-transition> -->
 </view>
 
 <van-popup show="{{ showTimePop }}" position="bottom" bind:close="onClose">
