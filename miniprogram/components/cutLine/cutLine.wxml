@@ -1,0 +1,4 @@
+<!--components/cutLine/cutLine.wxml-->
+<view class="line">
+  <view class="divLine"></view>
+</view>

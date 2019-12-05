@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "waterfall": "/components/waterFallView/waterFallView",
+    "divline": "/components/cutLine/cutLine",
+    "easy-button": "/components/base_button/base_button",
+    "van-popup": "/components/vant-weapp/popup/index",
+    "van-row": "/components/vant-weapp/row/index",
+    "van-col": "/components/vant-weapp/col/index",
+    "van-toast": "/components/vant-weapp/toast/index"
+  },
+  "enablePullDownRefresh": true
+}

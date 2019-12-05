@@ -1,0 +1,57 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: MicroSoft YaHei;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-size: 100%;
+  z-index: -1;
+}
+
+.pic{
+  width: 95%;
+  border: 2px;
+  display: flex;
+  margin: 20rpx;
+  padding-top: 10rpx;
+  align-content: center;
+  justify-content: center
+}
+
+.tips{
+  display: flex;
+  font-size: 32rpx;
+  color: gray;
+  align-content: center;
+  justify-content: center
+}
+
+.content{
+  margin: 16rpx;
+  border-radius: 12rpx;
+  padding:1em;
+  box-shadow: 5rpx 8rpx 10rpx rgba(53, 178, 255, 0.26);
+  background-color: rgba(255, 255, 255, 0.699);
+  opacity: 0.75
+}
+
+.title{
+  display: flex;
+  font-size: 26rpx;
+  color: gray;
+  align-content: center;
+  justify-content: center
+}
+
+#instruction{
+  margin-bottom: 20rpx;
+}
+
+#self{
+  margin-top: 30rpx;
+}

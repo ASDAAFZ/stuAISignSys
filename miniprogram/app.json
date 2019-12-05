@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/courseList/courseList",
+    "pages/courseAdd/courseAdd",
+    "pages/courseDetail/courseDetail",
+    "pages/instruction/instruction"
+  ],
+  "window": {
+    "backgroundColor": "#6699cc",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#5084c3",
+    "navigationBarTitleText": "都来了吗",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#13227a",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/courseList/courseList",
+        "iconPath": "images/unindex.png",
+        "selectedIconPath": "images/index.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/instruction/instruction",
+        "iconPath": "images/unhelp.png",
+        "selectedIconPath": "images/help.png",
+        "text": "帮助"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 3000
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

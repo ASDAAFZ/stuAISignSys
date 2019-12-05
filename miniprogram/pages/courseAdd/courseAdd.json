@@ -1,0 +1,18 @@
+{
+  "usingComponents": {
+    "van-progress": "/components/vant-weapp/progress/index",
+    "van-button": "/components/vant-weapp/button/index",
+    "van-panel": "/components/vant-weapp/panel/index",
+    "van-field": "/components/vant-weapp/field/index",
+    "van-cell": "/components/vant-weapp/cell/index",
+    "van-row": "/components/vant-weapp/row/index",
+    "van-col": "/components/vant-weapp/col/index",
+    "van-icon": "/components/vant-weapp/icon/index",
+    "van-transition": "/components/vant-weapp/transition/index",
+    "van-popup": "/components/vant-weapp/popup/index",
+    "van-uploader": "/components/vant-weapp/popup/index",
+    "van-datetime-picker": "/components/vant-weapp/datetime-picker/index",
+    "van-notify": "/components/vant-weapp/notify/index",
+    "van-toast": "/components/vant-weapp/toast/index"
+  }
+}

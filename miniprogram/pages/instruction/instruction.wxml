@@ -1,0 +1,25 @@
+<van-transition show="true" name="fade" duration="{{800}}">
+<view class="page">
+<image class="background" src="https://wechat-1300533406.cos.ap-chengdu.myqcloud.com/75a6357e5621497d6d379a5e627d0831.png" mode="aspectFill"></image>
+
+  <view class="content">
+    <image class='pic' id="instruction"src='cloud://stormcrow-wechat1-uhe9e.7374-stormcrow-wechat1-uhe9e-1300531306/instructionsssss.png' mode="widthFix"></image>
+    <text>\n</text>
+    <text class='tips'>图片长按可保存</text>
+    <image class='pic' src='cloud://stormcrow-wechat1-uhe9e.7374-stormcrow-wechat1-uhe9e-1300531306/exo.jpg' mode="widthFix" bindlongpress='saveImg1' bindtap='openset'></image>
+    <label class='title'>(EXO)</label>
+    <image class='pic' src='cloud://stormcrow-wechat1-uhe9e.7374-stormcrow-wechat1-uhe9e-1300531306/101.jpg' mode="widthFix" bindlongpress='saveImg2' bindtap='openset'></image>
+    <label class='title' >(火箭少女101)</label>
+    <image class='pic' src='cloud://stormcrow-wechat1-uhe9e.7374-stormcrow-wechat1-uhe9e-1300531306/pn.jpg' mode="widthFix" bindlongpress='saveImg3' bindtap='openset'></image>
+    <label class='title'>(跑男)</label>
+    <image class='pic' src='cloud://stormcrow-wechat1-uhe9e.7374-stormcrow-wechat1-uhe9e-1300531306/ynj.jpg' mode="widthFix" bindlongpress='saveImg4' bindtap='openset'></image>
+    <label class='title'>(一年级)</label>
+    <image class='pic' id="self" src='cloud://stormcrow-wechat1-uhe9e.7374-stormcrow-wechat1-uhe9e-1300531306/dm.png' mode="widthFix"></image>
+   
+  </view>
+</view>
+</van-transition>
+
+ <dialog title="微信授权" show="{{getAblumAccess}}" buttons="{{buttons}}" bindbuttontap="tapDialogButton" mask-closable="{{false}}">
+        <view>需要获取保存图片或视频到本地的权限，请确认授权，否则将无法保存图片到本地</view>
+</dialog>

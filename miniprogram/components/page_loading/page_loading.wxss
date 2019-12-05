@@ -1,0 +1,44 @@
+.wave {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wave .rect1 {
+    height: 100%;
+    width: 6rpx;
+    display: inline-block;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.wave .rect2 {
+    height: 100%;
+    width: 6rpx;
+    display: inline-block;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation-delay: -1.1s;
+}
+
+.wave .rect3 {
+    height: 100%;
+    width: 6rpx;
+    display: inline-block;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation-delay: -1.0s;
+}
+
+.wave .rect4 {
+    height: 100%;
+    width: 6rpx;
+    display: inline-block;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation-delay: -0.9s;
+}
+
+.wave .rect5 {
+    height: 100%;
+    width: 6rpx;
+    display: inline-block;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation-delay: -0.8s;
+}

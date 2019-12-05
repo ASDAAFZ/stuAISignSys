@@ -1,0 +1,57 @@
+/* miniprogram/pages/welcome/welcome.wxss */
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nickname {
+  margin-top: 100rpx;
+  font-size: 48rpx;
+  font-weight: bolder;
+  color: rgba(255, 255, 255, 0.63)
+}
+
+.avatar {
+  font-family: MicroSoft YaHei;
+  width: 200rpx;
+  height: 200rpx;
+  margin-top: 160rpx;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid rgb(198, 200, 207);
+  box-shadow: 6px 6px 15px white(0, 0, 0, 0.2);
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.925);
+  margin-block-end: 30rpx;
+}
+
+.navtobox {
+  margin-top: 200rpx;
+  border: 1px solid #2c1a65;
+  width: 200rpx;
+  height: 80rpx;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.navto {
+  font-size: 26rpx;
+  font-weight: bolder;
+  line-height: 80rpx;
+  color: #13202e;
+}
+
+page {
+  height: 100%;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-size: 100% 100%;
+  z-index: -1;
+  filter: blur(5rpx);
+}

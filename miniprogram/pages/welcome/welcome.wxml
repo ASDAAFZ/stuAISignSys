@@ -1,0 +1,15 @@
+<image class="background" src="https://wechat-1300533406.cos.ap-chengdu.myqcloud.com/75a6357e5621497d6d379a5e627d0831.png" mode="aspectFill"></image>
+<van-transition show="true" name="fade" duration="{{2500}}">
+  <view class="page">
+
+    <open-data type="userAvatarUrl" class="avatar">
+    </open-data>
+    <open-data type="userNickName" lang="zh_CN" class="nickname"></open-data>
+
+
+    <view class="navtobox" bindtap="onTap">
+      <text class="navto">都来了吗?</text>
+    </view>
+
+  </view>
+</van-transition>

@@ -1,0 +1,18 @@
+/* component/button/base_button/base_button.wxss */
+.component {
+  align-items: center;
+  justify-content: center;
+}
+
+.body {
+  font-display: MicroSoft YaHei;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 100;
+}
+
+.text{
+  font: bolder ;
+  color: black
+}

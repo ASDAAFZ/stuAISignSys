@@ -1,0 +1,27 @@
+<!--components/waterFallView/waterFallView.wxml-->
+<view class="waterFallView">
+  <view class="waterFallBoxes" wx:if="{{detailBoolean==false}}" wx:for="{{items}}" wx:key>
+    <view class="waterFallInformationBox" id="{{item._id}}" bind:tap="onClickEvent" >
+      <view class="courseName">课程名称：{{item.courseName}}</view>
+      <view class="courseRoom">课程时间：{{item.courseTime}}</view>
+      <view class="courseTime">课程教室：{{item.courseRoom}}</view>
+    </view>
+  </view>
+  <view class="waterFallBoxes" wx:if="{{detailBoolean==true}}" wx:for="{{items}}" wx:key>
+    <view class="waterFallInformationBox" style="display:inline-flex">
+      <view class="imageBox">
+        <image class="images"src="{{item.imageUrl}}" mode="aspectFill"></image>
+      </view>
+      <view class="stuInformationBox">
+        <view class="stuName">学生姓名：{{item.stuName}}</view>
+        <view class="stuID">学号：{{item.stuID}}</view>
+        <view class="stuSex">性别：{{item.stuSex}}</view>
+      </view>
+    </view>
+    <view class="stdStatus">
+      <view class="hasSigned {{item.hasSigned==true ? 'messageTag' : 'errorTag'}}">{{item.hasSigned==true ? '已签到' : '未签到'}}</view>
+        <!--easy-button wx:if="{{item.hasSigned==false}}" class="buttonView" text='补签' theme='fillingAndGradient2' width='150' height='50' textSize='28' color='#FE9036' endColor='#FE4E36' radius='15' buttontap="onClickButton"></easy-button-->
+    </view>
+    </view>
+  <easy-loading type="threeBounce" color="#FF9966" wx:if="{{showLoading}}"></easy-loading>
+</view>

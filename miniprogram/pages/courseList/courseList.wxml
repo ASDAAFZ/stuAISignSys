@@ -1,0 +1,50 @@
+<image class="background" src="https://wechat-1300533406.cos.ap-chengdu.myqcloud.com/75a6357e5621497d6d379a5e627d0831.png" mode="aspectFill"></image>
+<view class="page">
+  <view class="buttonBox">
+    <easy-button class="buttonView" text='添加课程' theme='filling' width='350' height='80' textSize='38' iconsize='48' icon='/images/addClass.png' color='#8facbd' radius='50' spacing='10' bindbuttontap="onAddCourse"></easy-button>
+    <easy-button class="buttonView" text='添加学员' theme='filling' width='350' height='80' textSize='38' iconsize='48' icon='/images/addStu.png' color='#8facbd' radius='50' spacing='10' bindbuttontap="onAddStudent"></easy-button>
+  </view>
+
+  <divline></divline>
+  <view class="waterfallView">
+    <waterfall dbName="{{dbName}}" field="{{limitField}}" detailBoolean="{{false}}" id="waterfallView" bindopenPage="onClickButton"></waterfall>
+  </view>
+</view>
+
+<van-popup show="{{ showAddStudentPop }}" bind:close="closeAddStudentPop" >
+  <view class="addStudentMsg">
+
+    <form class='subForm'>
+      <van-row>
+        <view class='formBody'>
+          <van-col span="12">
+            <image src="{{addStudentUrl}}" mode="aspectFill" style="width:241rpx;height:241rpx;padding-left:20rpx;" bindtap="uploadStudentPhoto" class='studentAvat'>
+            </image>
+          </van-col>
+
+          <van-col class="Input" span="12">
+            <label for="" class="head">Name</label>
+            <divline></divline>
+            <input placeholder="stuName" class="inputArea" bindinput="bindinputStudentStuName" value="{{addStudentName}}"></input>
+            <label for="" class="head">ID</label>
+            <divline></divline>
+            <input placeholder="stuID" class="inputArea" bindinput="bindinputStudentStuID" value="{{addStudentID}}"></input>
+            <label for="" class="head" >Sex</label>
+            <divline></divline>
+            <input placeholder="stuSex" class="inputArea" bindinput="bindinputStudentStuSex" value="{{addStudentSex}}"></input>
+          </van-col>
+          <van-row style="marign-top:40rpx;">
+              <button class='submitBut' bindtap="submitStuMsg">submit</button>
+          </van-row>
+        </view>
+      </van-row>
+
+    </form>
+  </view>
+
+</van-popup>
+
+<van-popup show="{{ showStudentSexPop }}" bind:close="closeSexStudentPop">
+</van-popup>
+
+<van-toast id="van-toast" />

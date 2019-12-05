@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+      "van-transition": "/components/vant-weapp/transition/index",
+      "dialog": "/components/dialog-weui/dialog/dialog"
+  },
+  "navigationBarTitleText": "使用说明"
+}

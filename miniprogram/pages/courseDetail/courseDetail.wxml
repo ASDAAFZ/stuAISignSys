@@ -1,0 +1,44 @@
+<view class="page">
+  <image class="background" src="https://wechat-1300533406.cos.ap-chengdu.myqcloud.com/75a6357e5621497d6d379a5e627d0831.png" mode="aspectFill"></image>
+  <loading class="Loading" width="100" height="200" color="#FFFFFF" wx:if="{{showLoading == true}}"></loading>
+  <view class="mainPage" style="display:{{showLoading == false ? 'block' : 'none'}}">
+    <view class="title">
+      <view class="titleBox">
+        <view class="titleText">课程信息</view>
+      </view>
+      <view class="delButton">
+        <easy-button class="delButton" style="float:right;" text='删除课程' theme='filling' width='150' height='50' textSize='28' color='#8facbd' radius='15' bindbuttontap="onDeleteCourse"></easy-button>
+      </view>
+    </view>
+    <view class="courseInfo">
+      <view class="">
+        <text class="couresehead">课程名称:</text>
+        <text class="courseText">{{courseName}}</text>
+      </view>
+      <view>
+        <text class="couresehead">课程教室:</text>
+        <text class="courseText">{{courseRoom}}</text>
+      </view>
+      <view>
+        <text class="couresehead">课程时间:</text>
+        <text class="courseText"> {{courseTime}}</text>
+      </view>
+      <view>
+        <text class="couresehead">签到情况：</text>
+        <text class="courseText">{{hasSignCount}} / {{stuCount}}</text>
+      </view>
+      <divline class="divline"></divline>
+      <view class="courseInfomation">{{courseIntro}}</view>
+    </view>
+    <view class="signButtons">
+      <easy-button wx:if="{{hasSigned==false}}" class="signButton" text='签到' theme='filling' width='150' height='50' textSize='28' color='#8facbd' radius='15' bindbuttontap="onClickSignButton"></easy-button>
+      <easy-button wx:if="{{hasStopSign==false}}" class="stopSignButton" text='停止签到' theme='filling' width='150' height='50' textSize='28' color='#8facbd' radius='15' bindbuttontap="onClickStopButton"></easy-button>
+    </view>
+    <view class="divider div-transparent div-dot"></view>
+    <view class="waterfallBox">
+      <waterfall id="waterfallView" dbName="stuSignSysCourseMsg" detailBoolean="{{true}}" limitField="{{limitField}}"></waterfall>
+    </view>
+  </view>
+</view>
+
+<van-toast id="van-toast" duration="{{1000}}" /> 

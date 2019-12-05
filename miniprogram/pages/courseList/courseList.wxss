@@ -1,0 +1,63 @@
+page {
+  background-color: #fff;
+  height: 100%;
+}
+
+.title {
+  font-family: MicroSoft YaHei;
+  margin-top: 10rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-size: 100% 100%;
+  z-index: -1;
+}
+
+.buttonBox {
+  font-family: MicroSoft YaHei;
+  display: flex;
+}
+
+.buttonView {
+
+  margin: 50rpx auto;
+}
+
+.waterfallView{
+  font-family: MicroSoft YaHei;
+  opacity: 0.53
+}
+
+.title {
+  margin: 40rpx;
+  font-size: 50rpx;
+}
+
+
+.addStudentMsg{
+  width: 650rpx;
+  height: 350rpx;
+  padding: 20rpx;
+  background-color: #e8eaf0f3;
+}
+.Input{
+  /* align-items: center */
+}
+.formBody{
+  display: block;
+}
+
+.submitBut{
+  float: center;
+  margin-right: 10rpx;
+  margin-top: 30rpx;
+  margin-bottom: 20rpxs;
+  overflow: hidden;
+  width: 120rpx;
+  height: 30rpx;
+}

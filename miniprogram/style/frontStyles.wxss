@@ -1,0 +1,26 @@
+.errorTag {
+  background-color: #CC3333;
+  color: #FFFFFF;
+  padding: 10rpx;
+  border-radius: 10rpx;
+  font-weight: bold;
+  font-size: 20rpx;
+}
+
+.messageTag {
+  background-color: #009999;
+  color: #FFFFFF;
+  padding: 10rpx;
+  border-radius: 10rpx;
+  font-weight: bold;
+  font-size: 20rpx;
+}
+
+.warmingTag {
+  background-color: #FFCC00;
+  color: #FFFFFF;
+  padding: 10rpx;
+  border-radius: 10rpx;
+  font-weight: bold;
+  font-size: 20rpx;
+}

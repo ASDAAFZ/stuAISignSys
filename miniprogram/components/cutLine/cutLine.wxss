@@ -1,0 +1,11 @@
+/* components/cutLine/cutLine.wxss */
+.divLine {
+  background: #999999;
+  width: 85%;
+  height: 3rpx;
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+}

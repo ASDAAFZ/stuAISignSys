@@ -1,0 +1,113 @@
+/* components/waterFallView/waterFallView.wxss */
+
+@import "/style/frontStyles.wxss";
+
+.waterFallBoxes {
+  margin: 16rpx;
+  padding: 5rpx;
+  border-radius: 12rpx;
+  box-shadow: 5rpx 8rpx 10rpx rgba(53, 178, 255, 0.26);
+  background-color: rgba(255, 255, 255, 0.9);
+  line-height: 50rpx;
+}
+
+.waterFallInformationBox {
+  margin-left: 25rpx;
+  padding: 5rpx;
+  overflow: hidden;
+}
+
+.uploadTime {
+  float: left;
+  background-color: #009999;
+  color: #FFFFFF;
+  padding: 10rpx;
+  border-radius: 10rpx;
+  font-weight: bold;
+  font-size: 20rpx;
+}
+
+.tag {
+  float: right;
+  background-color: #CC3333;
+  color: #FFFFFF;
+  padding: 10rpx;
+  border-radius: 10rpx;
+  font-weight: bold;
+  font-size: 20rpx;
+}
+
+.information {
+  overflow: hidden;
+  margin: 16rpx;
+}
+
+.waterFallIntrduction {
+  margin-left: 15rpx;
+  float: left;
+  word-wrap: break-word;
+  width: 450rpx;
+  font-size: 30rpx;
+}
+
+.images {
+  width: 120rpx;
+  height: 120rpx;
+  margin-top: 25rpx;
+  border-radius: 10rpx;
+}
+
+.img-container {
+  float: left;
+}
+
+.readMore {
+  margin-left: 15rpx;
+  float: right;
+  word-wrap: break-word;
+  width: 120rpx;
+  font-size: 30rpx;
+  color: #009966;
+  text-decoration: underline;
+}
+
+.tags {
+  margin: 5rpx;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.tagsBox {
+  width: 700rpx;
+  margin-left: 15rpx;
+  white-space: nowrap;
+}
+
+.imageBox {
+  margin: 15rpx;
+}
+
+.stuInformationBox {
+  margin: 30rpx;
+  line-height: 50rpx;
+  font-size: 30rpx;
+}
+
+.stdStatus {
+  overflow: hidden;
+}
+
+.hasSigned {
+  width: 100rpx;
+  text-align: center;
+  margin-left: 30rpx;
+  font-size: 25rpx;
+  margin-bottom: 15rpx;
+  float: left;
+  line-height: 30rpx;
+}
+
+.buttonView {
+  float: right;
+  margin-right: 30rpx;
+}

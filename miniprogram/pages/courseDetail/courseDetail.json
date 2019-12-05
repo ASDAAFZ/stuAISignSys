@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "waterfall": "/components/waterFallView/waterFallView",
+    "divline":  "/components/cutLine/cutLine",
+    "easy-button": "/components/base_button/base_button",
+    "loading": "/components/page_loading/page_loading",
+    "van-toast": "/components/vant-weapp/toast/index"
+  }
+}

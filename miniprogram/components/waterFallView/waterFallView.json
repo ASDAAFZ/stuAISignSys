@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "easy-loading": "/components/loading/loading",
+    "easy-button": "/components/base_button/base_button"
+  }
+}
